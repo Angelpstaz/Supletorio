@@ -4,6 +4,9 @@ public class PcHormigaLarva extends PcHormiga implements ChIHormigaLava {
     public PcHormigaLarva(String chestado) {
         super(chestado);
     }
+    public PcHormigaLarva(PcCh_Alimento pcAlimento){
+        super(pcAlimento);
+    }
 
     @Override
     public String toString() {
@@ -14,4 +17,5 @@ public class PcHormigaLarva extends PcHormiga implements ChIHormigaLava {
     public PcHormiga ChRealizarMetamorfosis(PcCh_Alimento alimento) {
         throw new UnsupportedOperationException("Unimplemented method 'ChRealizarMetamorfosis'");
     }
+
 }
