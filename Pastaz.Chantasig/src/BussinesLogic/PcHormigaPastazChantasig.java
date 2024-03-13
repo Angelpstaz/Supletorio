@@ -1,4 +1,5 @@
-public class PcHormigaReina extends PcHormiga {
+package BussinesLogic;
+public class PcHormigaPastazChantasig {
 
     @Override
     public String toString() {
