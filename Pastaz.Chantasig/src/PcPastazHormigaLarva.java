@@ -1,4 +1,4 @@
-public class PcHormigaLarva extends PcHormiga{
+public class PcPastazHormigaLarva extends PcPastazHormiga{
     
     @Override
     public String toString() {
