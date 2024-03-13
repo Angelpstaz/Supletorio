@@ -1,6 +1,6 @@
 package BussinesLogic;
 public abstract class PcHormiga {
- private String chestado="VIVA";
+private String chestado="VIVA";
 private PcCh_Alimento pcCh_Alimento;
 
 public PcHormiga(String chestado) {
