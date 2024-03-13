@@ -21,7 +21,7 @@ public class PcCh_AlimentoInsectivoro extends PcCh_Alimento {
 
     @Override
     public String toString() {
-        return "PcCh_AlimentoInsectivoro []";
+        return getClass().getCanonicalName();
     }
 
 }
