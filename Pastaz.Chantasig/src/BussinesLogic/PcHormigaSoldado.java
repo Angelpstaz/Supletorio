@@ -1,4 +1,5 @@
-public class PcHormigaPastazChantasig {
+package BussinesLogic;
+public class PcHormigaSoldado extends PcHormiga {
 
     @Override
     public String toString() {
