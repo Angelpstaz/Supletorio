@@ -1,3 +1,4 @@
+package BussinesLogic;
 public class PcHormigaReina extends PcHormiga {
 
     @Override
