@@ -16,7 +16,12 @@ public class PcCh_AlimentoCarnivoro extends PcCh_Alimento{
 
     @Override
     public String toString() {
-        return getClass().getCanonicalName();
+        return getClass().getName();
     }
+    @Override
+    public String pcObtenerTipoAlimento(){
+        return  "Carnivoro";
+    }
+
 
 }

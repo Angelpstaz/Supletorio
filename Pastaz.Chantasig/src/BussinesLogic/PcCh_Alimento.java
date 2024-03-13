@@ -14,5 +14,8 @@ public abstract class PcCh_Alimento implements PcCh_IAlimentoRadioactivo{
     public void setPcCh_escalaRadiacion(String pcCh_escalaRadiacion) {
         PcCh_escalaRadiacion = pcCh_escalaRadiacion;
     }
+    public String pcObtenerTipoAlimento(){
+        return  "";
+    }
     
 }

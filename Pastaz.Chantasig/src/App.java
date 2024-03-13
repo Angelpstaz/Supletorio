@@ -5,6 +5,6 @@ public class App {
         String pathFile = "src\\data\\AlimentosDeHormigas.txt";
         System.out.println("Hello, World!");
         PcEntomologo  pc = new PcEntomologo();
-        pc.pcObtenerAlimentosEIrradiarlo(pathFile);
+        pc.crearHormigueroLarvarioAlimentar(pc.pcObtenerAlimentosEIrradiarlo(pathFile));
     }
 }

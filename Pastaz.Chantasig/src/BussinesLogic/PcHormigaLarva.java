@@ -1,8 +1,15 @@
 package BussinesLogic;
-public class PcHormigaLarva extends PcHormiga implements ChIHormigaLava {
+public class PcHormigaLarva extends PcHormiga implements ChIHormigaLava{
     
-    public PcHormigaLarva(String chestado) {
-        super(chestado);
+    private PcCh_Alimento pcCh_Alimento;
+
+    public PcHormigaLarva(String chEstado) {
+        super(chEstado);
+    }
+
+    public PcHormigaLarva(PcCh_Alimento pcAlimento){
+        super(pcAlimento);
+        
     }
     public PcHormigaLarva(PcCh_Alimento pcAlimento){
         super(pcAlimento);
@@ -19,3 +26,4 @@ public class PcHormigaLarva extends PcHormiga implements ChIHormigaLava {
     }
 
 }
+

@@ -6,7 +6,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sound.midi.Patch;
+
 public class PcEntomologo {
+    String pathFile = "C:\\Users\\Angel\\Downloads\\New\\Supletorio\\Pastaz.Chantasig\\src\\data\\AlimentosDeHormigas.txt";
     
     public List<PcCh_Alimento> pcObtenerAlimentosEIrradiarlo(String rutaArchivo) throws IOException {
         List<PcCh_Alimento> alimentos = new ArrayList<>();
@@ -14,10 +17,8 @@ public class PcEntomologo {
         try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
             String linea;
             while ((linea = br.readLine()) != null) {
-                // Dividir la línea en dos partes utilizando la coma como delimitador
                 String[] partes = linea.split(",");
                 if (partes.length == 2) {
-                    // Crear un objeto PcCh_Alimento y añadirlo a la lista
                     switch (partes[1]) {
                         case "Carnívoro":
                             PcCh_AlimentoCarnivoro alimentoC = new PcCh_AlimentoCarnivoro(partes[0]);
@@ -35,6 +36,11 @@ public class PcEntomologo {
                             alimentos.add(alimentoI);
                             // System.out.println("se agregó insectivoro "+ partes[0]);
                             break;
+                        case "Omnívoro":
+                            PcCh_AlimentoOmnivoro alimentoO = new PcCh_AlimentoOmnivoro(partes[0]);
+                            alimentos.add(alimentoO);
+                            // System.out.println("se agregó insectivoro "+ partes[0]);
+                            break;
                         
                         default:
                             break;
@@ -49,4 +55,14 @@ public class PcEntomologo {
         return alimentos;
     }
 
+    public List<PcHormiga> crearHormigueroLarvarioAlimentar(List<PcCh_Alimento> pcLstAlimentoIrradiado) throws IOException{
+        pcLstAlimentoIrradiado = pcObtenerAlimentosEIrradiarlo(pathFile);
+        for(int i=0; i <30; i++){
+            PcHormigaLarva pcLarva= new PcHormigaLarva(pcLstAlimentoIrradiado.get(i));
+            
+        }
+
+        return null;
+
+    }
 }
