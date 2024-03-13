@@ -9,6 +9,7 @@ public class PcHormigaLarva extends PcHormiga implements ChIHormigaLava{
 
     public PcHormigaLarva(PcCh_Alimento pcAlimento){
         super(pcAlimento);
+        
     }
 
     @Override
