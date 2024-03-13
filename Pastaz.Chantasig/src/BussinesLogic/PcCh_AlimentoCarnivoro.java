@@ -13,11 +13,6 @@ public class PcCh_AlimentoCarnivoro extends PcCh_Alimento{
         throw new UnsupportedOperationException("Unimplemented method 'pcchSetIrradiar'");
     }
 
-    @Override
-    public int pcchGetIrradiado() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pcchGetIrradiado'");
-    }
 
     @Override
     public String toString() {
