@@ -14,8 +14,8 @@ public abstract class PcHormiga {
     public void setEstado(String chestado) {
         this.chestado = chestado;
     }
-    public PcHormiga(PcCh_Alimento pcCh_Alimento) {
-        this.pcCh_Alimento = pcCh_Alimento;
+    public PcHormiga(PcCh_Alimento pcAlimento) {
+        this.pcAlimento = pcAlimento;
     }
  
 }
