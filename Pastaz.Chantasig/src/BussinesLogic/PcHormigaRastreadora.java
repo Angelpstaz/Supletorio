@@ -3,7 +3,6 @@ public class PcHormigaRastreadora extends PcHormiga {
 
     public PcHormigaRastreadora(String chestado) {
         super(chestado);
-        //TODO Auto-generated constructor stub
     }
 
     @Override
